@@ -43,8 +43,6 @@ pip install Scrapy
 
 Fork this repository, and push code throughout the activity
 
-Create a folder for each part and a subfolder for the different steps.
-
 
 # First Part : Python Basis
 
@@ -122,27 +120,21 @@ anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 Create your scrapy projet :
 
 ```shell
-scrapy startproject worshop-scraping
+scrapy startproject workshop_scraping
 ```
 
 ## Setup your spider
 
-First we need to create our scrapy folder :
-
-```shell
-scrapy startproject folder_name
-```
-
 After, we have to generate the first spider:
 
 ```shell
-scrapy genspider spider_name
+scrapy genspider ecommerce webscraper.io/test-sites/e-commerce/static
 ```
 
 To launch your spider :
 
 ```shell
-scrapy crawl spider_name
+scrapy crawl ecommerce
 ```
 ## Exercise 1
 
